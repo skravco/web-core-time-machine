@@ -1,0 +1,59 @@
+:root {
+  --dark: black;
+  --light: azure;
+  --fontcolor: crimson;
+}
+
+* {
+
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--light);
+  color: var(--fontcolor);
+}
+
+.watch {
+  text-align: center;
+  background-color: var(--dark);
+  width: 100%;
+  max-width: 360px;
+  margin: 4rem auto;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+.watch {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+
+  color: var(--fontcolor);
+  font-size: 1.25rem;
+  background-color: var(--light);
+  margin: 0 0.75rem;
+  padding: 0.75rem 1rem;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+button:active {
+  background-color: var(--dark);
+}
